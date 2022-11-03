@@ -397,6 +397,23 @@ body{
     
 @media screen and (max-width: 768px) {
     
+    .item_skil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        background-color: rgb(39, 39, 73);
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 rgba(13, 253, 213, 0.5);
+        backdrop-filter: blur(5px);
+        transition: 0.5s;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+    }
     .box1{
         margin-left: 0;
     }
