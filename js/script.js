@@ -71,6 +71,9 @@ const value = getComputedStyle(document.documentElement).getPropertyValue('--sel
 // get all slides
 const query = document.querySelectorAll('.slides-list');
 
+// quantidade de slides
+let qt_slide = 4;
+
 function slides_n_p(click_id) {
 // #function left: calc(var(--selected-item) * -100%);
     if (click_id == 'next') {
@@ -79,7 +82,7 @@ function slides_n_p(click_id) {
             document.documentElement.style.setProperty('--selected-item', default_slide + 1);
             default_slide += 1;
             }
-        else if (default_slide == 3){
+        else if (default_slide == qt_slide){
             default_slide = 0;
             document.documentElement.style.setProperty('--selected-item', default_slide);
             }
@@ -91,7 +94,7 @@ function slides_n_p(click_id) {
     }
     else if (click_id == 'previus') {
         if (default_slide == 0) {
-            default_slide = 3;
+            default_slide = qt_slide;
             document.documentElement.style.setProperty('--selected-item', default_slide);
             }
         else {
@@ -114,7 +117,7 @@ function slide_timer() {
         document.documentElement.style.setProperty('--selected-item', 1);
         default_slide = 1;
         }
-    else if (value == 3) {
+    else if (value == qt_slide) {
         document.documentElement.style.setProperty('--selected-item', 0);
         default_slide = 0;
 

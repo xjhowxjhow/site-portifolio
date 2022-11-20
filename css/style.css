@@ -492,7 +492,7 @@ body{
 
 .slides-list{
 
-    --total-items: 4;
+    --total-items: 5;
     
     list-style-type: none;
     margin: 10px 0;
