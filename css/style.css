@@ -31,6 +31,18 @@ body{
     src: url(/src/fonts/SansationLight.ttf);
 }
 
+
+
+.flex-coll{
+    display:flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display:flex;
+    flex-direction: row;
+}
+
 .bg_video{
 	position: fixed; 
 	right: 0; 
@@ -322,14 +334,13 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     transition: 0.5s;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .item_skil{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: start;
     flex-wrap: wrap;
@@ -345,6 +356,11 @@ body{
 
 }
 
+.items-group-skill{
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
 
 
 
