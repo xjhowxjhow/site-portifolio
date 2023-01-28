@@ -233,7 +233,7 @@ window.addEventListener("scroll", function() {
   sections.forEach(function(section) {
     const sectionTop = section.getBoundingClientRect().top;
     const sectionBottom = section.getBoundingClientRect().bottom;
-    if (sectionTop <= 0.5 && sectionBottom > 0.5) {
+    if (sectionTop <= 0 && sectionBottom > 100.5) {
       console.log('-------- ')
       console.log(sectionTop)
       console.log(sectionBottom)
