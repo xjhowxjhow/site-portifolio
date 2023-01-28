@@ -389,32 +389,3 @@ window.onresize = function() {
 
   }
 }
-
-// verifica ao abrir o site se o tamanho da tela é maior que 768px
-
-// if (window.innerWidth > 768) {
-//   togle_menu.style.height = '20px';
-//   togle_menu.style.transform = 'rotate(0deg)';
-//   togle_s = 0;
-//   group_menu.style= 'display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: 0; padding: 0; gap: 10px; margin-right: 20px;'
-//   header.style = 'width: 100%; position: fixed; justify-content: space-between; align-items: center; padding: 20px 0px; z-index: 100; transition: 0.2s;';
-//   logo_text.style = 'width: 100%;'
-//   menu_item.style= 'font-size: 1rem;'
-//   for (let i = 0; i < group_menu.children.length; i++) {
-//     group_menu.children[i].style = 'font-size: 1rem;';
-//   }
-  
-   
-// }
-// else {
-//   togle_menu.style.height = '20px';
-//   togle_menu.style.transform = 'rotate(0deg)';
-//   togle_s = 0;
-//   group_menu.style= 'display: none;'
-//   logo_text.style = 'width: 100%;'
-//   menu_item.style= 'font-size: 1rem;'
-//   for (let i = 0; i < group_menu.children.length; i++) {
-//     group_menu.children[i].style = 'font-size: 1rem;';
-//   }
-  
-// }
