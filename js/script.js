@@ -124,7 +124,7 @@ function currentsectionheader(item){
     carreira.style.backgroundColor = 'transparent';
     projetos.style.backgroundColor = 'transparent';
     contato.style.backgroundColor = 'transparent';
-  }else if (item == 'txt-glosary-body'){
+  }else if (item == 'c-sobre'){
     home.style.backgroundColor = 'transparent';
     sobre.style.backgroundColor = 'rgba(255, 255, 255, 0.2)';
     carreira.style.backgroundColor = 'transparent';
@@ -234,7 +234,7 @@ window.addEventListener("scroll", function() {
     const sectionTop = section.getBoundingClientRect().top;
     const sectionBottom = section.getBoundingClientRect().bottom;
     if (sectionTop <= 0 && sectionBottom > 0) {
-
+      console.log(section.id);
       currentsectionheader(section.id);
     }
   });
