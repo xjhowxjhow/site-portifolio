@@ -1,13 +1,4 @@
 
-
-
-
-
-
-
-
-
-// letreiros
 function getElm(elm) {
   return document.getElementById(elm);
 }
@@ -18,25 +9,6 @@ function getElmQuery(elm) {
 
 
 
-
-
-
-// function scrollpages(){
-
-//   // acessa o proximo elemento
-//   window.location.href = "#c-sobre";
-
-// }
-
-
-
-
-
-
-
-
-
-// welcome
 const textos = [
   'Olá sou o Jhonatan Desenvolvedor Web e Desktop',
   "Hello, I'm Jhonatan Web and Desktop Developer",
@@ -46,36 +18,25 @@ const textos = [
   'Olá sou o Jhonatan Desenvolvedor Web e Desktop'
 ];
 
-// Armazena o elemento HTML onde o texto será exibido
 const elemento = document.getElementById("letreiro-well");
 
-// Inicia a contagem do índice do caractere a ser exibido
 let indice = 0;
 let textoAtual = 0;
 
-// Define a função que será chamada a cada intervalo de tempo
 function digitacao() {
-  // Verifica se o índice é menor que o tamanho do texto
   if (indice <= textos[textoAtual].length) {
-    // Exibe o caractere na tela
     elemento.innerHTML = textos[textoAtual].slice(0, indice);
-    // Incrementa o índice
     indice++;
 
-    // Define o intervalo de tempo em que a função será chamada novamente
     setTimeout(digitacao, 100);
   } else {
-    // Verifica se há mais textos a serem exibidos
     if (textoAtual < textos.length - 1) {
-      // Se houver, reinicia o índice e passa para o próximo texto
       indice = 0;
       textoAtual++;
     } else {
-      // Se não houver mais textos, volta para o primeiro texto
       textoAtual = 0;
     }
 
-    // Inicia o intervalo de tempo novamente
     setTimeout(digitacao, 1000);
   }   
 }
@@ -84,7 +45,7 @@ function digitacao() {
 digitacao();
 
 
-// repete
+
 
 
 const botao1 = document.getElementById('sobre');
@@ -264,9 +225,8 @@ const observer = new IntersectionObserver(entries => {
   observer.observe(animatedElement);
 });
 
-// Seleciona as divs que deseja observar
 
-// Cria um novo observador de interseção
+
 const sections = document.querySelectorAll("#c-home, #c-sobre, #c-carreira, #c-projetos, #c-contato");
 
 window.addEventListener("scroll", function() {
