@@ -91,12 +91,13 @@ const botao1 = document.getElementById('sobre');
 const botao2 = document.getElementById('home');
 const botao3 = document.getElementById('carreira');
 const botao4 = document.getElementById('projetos');
+const botao5 = document.getElementById('contato');
 
 const content = document.getElementById('c-sobre');
 const content2 = document.getElementById('c-home');
 const content3 = document.getElementById('c-carreira');
 const content4 = document.getElementById('c-projetos');
-
+const content5 = document.getElementById('c-contato');
 
 botao1.addEventListener('click', function() {
     content.scrollIntoView({ behavior: 'smooth' });
@@ -104,6 +105,7 @@ botao1.addEventListener('click', function() {
     botao2.style.backgroundColor = 'transparent';
     botao3.style.backgroundColor = 'transparent';
     botao4.style.backgroundColor = 'transparent';
+    botao5.style.backgroundColor = 'transparent';
   });
 
 botao2.addEventListener('click', function() {
@@ -112,6 +114,7 @@ botao2.addEventListener('click', function() {
     botao1.style.backgroundColor = 'transparent';
     botao3.style.backgroundColor = 'transparent';
     botao4.style.backgroundColor = 'transparent';
+    botao5.style.backgroundColor = 'transparent';
   }
 );
 
@@ -121,6 +124,7 @@ botao3.addEventListener('click', function() {
     botao1.style.backgroundColor = 'transparent';
     botao2.style.backgroundColor = 'transparent';
     botao4.style.backgroundColor = 'transparent';
+    botao5.style.backgroundColor = 'transparent';
 
   }
 );
@@ -131,6 +135,17 @@ botao4.addEventListener('click', function() {
     botao1.style.backgroundColor = 'transparent';
     botao2.style.backgroundColor = 'transparent';
     botao3.style.backgroundColor = 'transparent';
+    botao5.style.backgroundColor = 'transparent';
+  }
+);
+
+botao5.addEventListener('click', function() {
+    content5.scrollIntoView({ behavior: 'smooth' });
+    botao5.style.backgroundColor = 'rgba(255, 255, 255, 0.2)'
+    botao1.style.backgroundColor = 'transparent';
+    botao2.style.backgroundColor = 'transparent';
+    botao3.style.backgroundColor = 'transparent';
+    botao4.style.backgroundColor = 'transparent';
   }
 );
 
