@@ -796,11 +796,13 @@ body{
     background-color: #fff;
     padding: 20px;
     border: 2px solid #000;
+    border-radius: 5px;
 }
 
 .content-form .contact-info .form-group {
     margin-bottom: 20px;
     position: relative;
+    
 }
 
 .content-form .contact-info .form-group label {
@@ -810,6 +812,7 @@ body{
     display: block;
     margin-bottom: 5px;
     text-shadow: 1px 1px #fff;
+    
     
 }
 
@@ -824,6 +827,7 @@ body{
     font-weight: bold;
     color: #333;
     text-shadow: 1px 1px #fff;
+    border-radius: 5px;
     
 }
 .content-form .contact-info .form-group span:hover {
