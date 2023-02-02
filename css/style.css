@@ -830,6 +830,15 @@ body{
     border-radius: 5px;
     
 }
+
+.form-group a{
+    text-decoration: none;
+    color: #333;
+    font-family: 'Bungee';
+    font-weight: bold;
+    text-shadow: 1px 1px #fff;  
+}
+
 .content-form .contact-info .form-group span:hover {
 background-color: #ddd;
 }
